@@ -8,9 +8,12 @@ import com.example.tmdbclient.data.repository.tvshows.datasource.TvShowCacheData
 import com.example.tmdbclient.data.repository.tvshows.datasourceImpl.TvShowCacheDataSourceImpl
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
+@InstallIn(SingletonComponent::class)
 class CacheDataSourceModule {
 
     @Singleton
